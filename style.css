@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    /* position: relative; */
+    background:red;
+    z-index: 1000;
+}
+.logo h1{
+    margin-left: 30px;
+    color: white;
+}
+ 
+/* #caro{
+    position: fixed;
+    z-index: 1000;
+ } */
+#icon{
+    display: none;
+}
+#icon1{
+    margin-left: 20px;
+    display: none;
+}
+#navbar {
+    display: flex; 
+    margin-top: 10px;
+    margin-left: 300px;
+    
+    
+}
+#navbar li{
+    list-style: none;
+    margin-left: 45px;
+    
+
+}
+#navbar li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+}
+#navbar li a:hover{
+    color: #333;
+}
+#canvas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#canvas li{
+    list-style: none;
+}
+
+#canvas li a{
+    text-decoration: none;
+    line-height: 45px;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 25px;
+
+}
+#canvas li a:hover{
+    color: red;
+}
+ 
+#caro {
+    padding: 0px!important;
+} 
+
+
+
+#gallery{
+    height: fit-content;
+    width: 33%;
+    
+    height: 139px;
+    
+}
+#gallery a{ 
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#gallery a img{
+    width: 50%;
+    height: 60px;
+    margin-top: 5px;
+    
+}
+#gallery a  .card-body p{
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+    font-size: 9px;
+    display: flex;
+    font-weight: bolder;
+    margin-top: -5px;
+    text-align: center;
+    
+}
+#slide{
+    margin-top: 57px;
+}
+
+
+
+ #btn{
+    margin-bottom: 15px;
+}
+.carousel-item img{
+    width: 100%;
+    height: 611px;
+}
+
+.services{
+	color: black;
+	background-color: white;
+	padding: 4px 10px;
+	font-size: 18px;
+	border-radius: 6px;
+	font-weight: 800;
+	opacity: 0.7;
+}
+
+#footer{
+    height: 52px;
+
+}
+#footer p{
+    /* display: inline-block; */
+    margin-top: 13px;
+    margin-bottom: auto;
+}
+.alert{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    background: blanchedalmond;
+    display: none;
+}
+
+
+/* media queries */
+
+@media (max-width:1024px){
+    
+    .logo-section{
+        display: flex;
+        align-items: center;
+        position: fixed;
+    }
+    
+    #navbar li{
+        list-style: none;
+        margin-left: 10px;
+    }
+
+    #gallery{
+        width: 33%;
+        height: 106px;
+    
+    }
+    
+    
+    
+   
+    .carousel-item img{
+        width: 100%;
+        height: 480px;
+    }
+}
+
+@media (max-width:768px){
+    #navbar {
+        display: flex; 
+        margin-top: 10px;
+        margin-left: 60px;
+        /* float: right; */
+    }
+    #navbar li{
+        list-style: none;
+        margin-left: 10px;
+    
+    }
+    
+    #gallery{
+        width: 33%;
+        height: 87px;
+    }
+    #gallery a img{
+        width: 60%;
+        height: 40px;
+    }
+    #gallery a .card-body p{
+        font-size: 6px;
+    }
+  
+   
+    .carousel-item img{
+        width: 100%;
+        height: 403px;
+    }
+    #footer p{
+        font-size: 15px;
+         margin-top: 12px;
+    }
+    
+}
+
+@media (max-width:426px){
+    #navbar{
+        display: none;
+    }
+    .logo-section #icon{
+        display: block;
+    }
+    
+    #icon1{
+        display: block;
+        /* margin-left: 150px; */
+    }
+    #gallery{
+        width: 33%;
+        height: 90px;
+    }
+    #gallery a img{
+        width: 60%;
+        height: 50px;
+    }
+    #gallery a .card-body p{
+        font-size: 7px;
+    }
+    
+    
+    #footer p{
+       
+        font-size: 10px;
+        margin-top: 20px;
+    }
+    .carousel-item img{
+        width: 100%;
+        height: 200px;
+    }
+
+}
+@media (max-width:376px){
+    #icon1{
+        display: block;
+        /* margin-left: 100px; */
+    }
+    #gallery{
+        width: 33%;
+        height: 100px;
+    }
+    #gallery a .card-body p{
+        font-size: 7px;
+    }
+   
+    
+
+}
+
+@media (max-width:321px){
+    #icon1{
+        display: block;
+        /* margin-left: 50px; */
+    }
+    #gallery{
+        width: 33%;
+        height: 100px;
+    }
+    #gallery a .card-body p{
+        font-size: 7px;
+    }
+    
+}
